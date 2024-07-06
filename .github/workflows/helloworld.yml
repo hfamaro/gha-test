@@ -11,4 +11,4 @@ jobs:
       - run: uname -a
       - run: env
       - run: echo "Hello GHSCD 2024-07 do Heliel!"
-      - run: echo ${{ secrets.SEGREDO}}
+      - run: base64 ${{ secrets.SEGREDO}} | echo
